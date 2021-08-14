@@ -7,10 +7,10 @@ n1 = 0
 while(n1<=8):
     n1 = n1+1
     print('Guess a Number')
-    a = int(input())
+    a = float(input())
     if a>v:
         print("NOOOOOO")
-        print("You Guessed A Smaller Number.")
+        print("You Guessed A Larger Number.")
         print("Remaining", 9-n1, "Chances", '\n')
     elif a<v:
         print("NOOOOOO")
@@ -19,14 +19,7 @@ while(n1<=8):
     elif a==18:
         print("CONGRATULATIONS!")
         print("You Guessed the Right Number.")
-        break
-if 9-n1==3:
-    print("HINT: The Number is less then 100")
-elif 9-n1==2:
-    print("HINT: The Number is not more then 50")
-elif 9-n1==1:
-    print("HINT: The Number is close to 25")
-
-
+        continue
+        
 if 9-n1==0:
     print("GAME OVER")
